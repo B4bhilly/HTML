@@ -1,0 +1,147 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+   
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    width:80%;
+    height: 100%;
+    background: url("images/img.png") center/cover no-repeat;
+}
+
+.right-side {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.login-link {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #000;
+    position: relative;
+    font-weight: 600;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-left: 22px;
+    bottom: 0px;
+    width: 100px;
+    height: 3px;
+    background: #55a5cd ;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+input {
+    width: 200px;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: transparent;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+.password-field {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 20px;
+}
+
+button {
+    width: 65%;
+    padding: 12px;
+    background: #0D2545;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.terms {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+    position: absolute;
+    bottom: 20px;
+    left: 240px;
+}
+
+.terms a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+input::placeholder{
+    color: #000;
+}
+.tit{
+    position: absolute;
+    top: 120px;
+    right: 180px;
+}
+.imp{
+    position: absolute;
+    top: 240px;
+    right: 150px;
+}
