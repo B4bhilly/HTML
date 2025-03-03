@@ -125,3 +125,9 @@ input::placeholder{
     top: 240px;
     right: 150px;
 }
+
+media (max-width: 500px){
+    body{
+        
+    }
+}

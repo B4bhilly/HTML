@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-wave-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #144A8F;
+}
+
+.header-wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #144A8F;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.doctor-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.specialty {
+    color: #0089FF;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars img {
+    width: 15px;
+    height: 15px;
+}
+
+.statistics {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stat-button {
+    background: #0089FF;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #0089FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 30px;
+    height: 30px;
+}
+
+.appointment-times {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.time-row {
+    display: flex;
+    gap: 15px;
+}
+
+.time-btn {
+    background: #0089FF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border: 1px solid #0089FF;
+    color: #0089FF;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.location-btn {
+    padding: 10px 20px;
+    background: #0D2545;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
