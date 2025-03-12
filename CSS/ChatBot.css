@@ -1,0 +1,370 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 237px;
+    background: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.sidebar .header {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin-bottom: 35px;
+}
+
+.sidebar .logo {
+    width: 56px;
+    height: 63px;
+}
+
+.sidebar .title {
+    font-size: 18px;
+    margin-left: 16px;
+    color: #000;
+}
+
+.sidebar .arrows {
+    display: flex;
+    gap: 11px;
+    margin-left: auto;
+}
+
+.sidebar .arrow {
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 0 16px;
+}
+
+.sidebar .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-item:hover {
+    background: rgba(26, 117, 253, 0.1);
+}
+
+.sidebar .nav-item.active {
+    background: #fff;
+    border: 1px solid #1A75FD;
+}
+
+.sidebar .nav-item.active span {
+    color: #1A75FD;
+}
+
+.sidebar .nav-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar .nav-item span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .nav-item.active span {
+    font-size: 16px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .header {
+    width: 98%;
+    /* max-width: 1105px; */
+    height: 101px;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.main-content .title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.main-content .user-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.main-content .notification-container {
+    position: relative;
+    width: 43px;
+    height: 43px;
+}
+
+.main-content .notification-icon {
+    width: 36px;
+    height: 36px;
+    background: #FAFAFA;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.main-content .notification-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.main-content .notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FF2F1E;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 2px 5.5px;
+    font-size: 12px;
+    min-width: 19px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-content .user-avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.main-content .user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main-content .user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .user-name {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.main-content .user-role {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-content .dropdown-icon {
+    width: 31px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-content .dropdown-icon img {
+    width: 15px;
+    height: auto;
+}
+
+.main-content .chat-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content .welcome-section {
+    margin-bottom: auto;
+}
+
+.main-content .welcome-text {
+    margin-bottom: 20px;
+}
+
+.main-content .chat-message {
+    background: #04ac0f;
+    padding: 12px 24px;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 100vh;
+}
+
+.main-content .input-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.main-content .avatar {
+    position: relative;
+    width: 36px;
+    height: 33px;
+}
+
+.main-content .avatar-circle {
+    width: 36px;
+    height: 33px;
+    background: #888888;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.main-content .avatar-image {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content .input-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border: 1px solid #00007c33;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-content .input-field input {
+    flex-grow: 1;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #000000cc;
+}
+
+.main-content .input-field input::placeholder {
+    color: #000000cc;
+    opacity: 0.65;
+}
+
+.main-content .send-button {
+    background: #478eff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px;
+}
+
+.main-content .send-button:hover {
+    background: #3a7ae0;
+}
+
+.main-content .send-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-content .header {
+        padding: 0 10px;
+    }
+
+    .main-content .title {
+        font-size: 20px;
+    }
+
+    .main-content .user-section {
+        gap: 10px;
+    }
+
+    .main-content .notification-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main-content .notification-icon img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .main-content .notification-badge {
+        font-size: 10px;
+    }
+
+    .main-content .user-avatar {
+        width: 28px;
+        height: 28px;
+    }
+
+    .main-content .user-name, .main-content .user-role {
+        font-size: 10px;
+    }
+
+    .main-content .dropdown-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .main-content .dropdown-icon img {
+        width: 12px;
+    }
+
+    .main-content .chat-message {
+        max-width: 80%;
+    }
+
+    .main-content .input-field {
+        max-width: 100%;
+    }
+}
+
